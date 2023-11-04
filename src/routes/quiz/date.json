@@ -1,0 +1,32 @@
+let quizContent = [
+  {
+    question: "What does the phrasal verb 'give up' mean in the context of 'Don't give up on your dreams'?",
+    options: ['a) Surrender or quit', 'b) Offer support', 'c) Give away something for free', 'd) Keep a secret'],
+    correct_answer: 'a) Surrender or quit',
+  },
+  {
+    question: "In the sentence 'She needs to pick up her dry cleaning,' what does 'pick up' mean?",
+    options: ['a) Lift something heavy', 'b) Choose an item', 'c) Collect or obtain', 'd) Put something down'],
+    correct_answer: 'c) Collect or obtain',
+  },
+  {
+    question: "What does the phrasal verb 'set up' mean in the context of 'She's going to set up her own business'?",
+    options: ['a) Take a break', 'b) Establish or start', 'c) Arrange furniture', 'd) Finish a project'],
+    correct_answer: 'b) Establish or start',
+  },
+  {
+    question: "In the sentence 'He always comes up with great ideas,' what does 'come up with' mean?",
+    options: ['a) Appear unexpectedly', 'b) Arrive late', 'c) Create or think of', 'd) Stay quiet'],
+    correct_answer: 'c) Create or think of',
+  },
+  {
+    question: "What does the phrasal verb 'run into' mean in the sentence 'I ran into my old friend at the grocery store'?",
+    options: ['a) Run fast', 'b) Collide with', 'c) Meet unexpectedly', 'd) Escape from'],
+    correct_answer: 'c) Meet unexpectedly',
+  },
+  {
+    question: "In the sentence 'I'm going to drop by the store on my way home,' what does 'drop by' mean?",
+    options: ['a) Lower something', 'b) Visit briefly or briefly stop', 'c) Deliver something', 'd) Pass by without stopping'],
+    correct_answer: 'b) Visit briefly or briefly stop',
+  }
+];

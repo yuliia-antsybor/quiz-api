@@ -1,4 +1,5 @@
-let quizContent = [
+
+module.exports = [
   {
     question: "What does the phrasal verb 'give up' mean in the context of 'Don't give up on your dreams'?",
     options: ['a) Surrender or quit', 'b) Offer support', 'c) Give away something for free', 'd) Keep a secret'],
@@ -30,3 +31,27 @@ let quizContent = [
     correct_answer: 'b) Visit briefly or briefly stop',
   }
 ];
+
+
+const indexOfCorrectAnswer = options.indexOf(correctAnswer);
+
+// category.js
+module.exports = [
+  {
+    name: 'Nature',
+  },
+  {
+    name: 'Astronomy',
+  }
+]
+
+// questions.js
+module.exports = {
+  'Nature': [],
+  'Astronomy': [],
+}
+
+// /quiz/:id
+// /quiz/nature
+
+

@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const questions = require('./questions')
+
 const QUIZ_LIST = [
   {
     id: 0,
@@ -14,17 +16,14 @@ const QUIZ_LIST = [
   },
 ];
 
-const questions = [
-  [ { question: 'How old are you?', varaints: ['a', 'b', 'c']} ],
-  [ { question: 'The biggest country in Europe', varaints: ['Ukraine', 'France', 'Luxemburg']} ]
-]
-
 router.get('/quiz', (req, res) => {
   res.json({ items: QUIZ_LIST })
 });
 
 router.get('/quiz/:id', (req, res) => {
-  const id = req.params.id;
+  const id = req.params.id; // nature
+
+  // questions[id]
 
   if (questions[id]) {
     res.json({ items: questions[id] });
@@ -34,3 +33,4 @@ router.get('/quiz/:id', (req, res) => {
 });
 
 module.exports = router;
+

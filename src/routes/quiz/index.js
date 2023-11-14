@@ -1,32 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-const questions = require('./questions')
+const questions = require('./questions');
+const categories = require('./category');
 
-const QUIZ_LIST = [
-  {
-    id: 0,
-    name: 'Nature',
-    img: './mountains.jpg'
-  },
-  {
-    id: 1,
-    name: 'Geography',
-    img: './earth.jpg'
-  },
-];
-
-router.get('/quiz', (req, res) => {
-  res.json({ items: QUIZ_LIST })
+router.get('/quiz/category', (req, res) => {
+  res.json(categories);
 });
 
-router.get('/quiz/:id', (req, res) => {
-  const id = req.params.id; // nature
+router.get('/quiz/category/:name', (req, res) => {
+  const name = req.params.name; // nature
 
   // questions[id]
 
-  if (questions[id]) {
-    res.json({ items: questions[id] });
+  if (questions[name]) {
+    res.json({ items: questions[name] });
   } else {
     res.status(404).send('Quiz was not found');
   }
@@ -34,3 +22,5 @@ router.get('/quiz/:id', (req, res) => {
 
 module.exports = router;
 
+//1.додати ендпоінт , який буде присилати айді питання та отриману відповідь, щоб повертало тру чи фолс.
+//2.не показувати правильну відповідь

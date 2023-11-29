@@ -8,16 +8,25 @@ router.get('/quiz/category', (req, res) => {
   res.json(categories);
 });
 
-router.get('/quiz/category/:name', (req, res) => {
-  const name = req.params.name; // nature
+router.get('/quiz/:category/questions', (req, res) => {
+  const { category } = req.params;
 
-  // questions[id]
-
-  if (questions[name]) {
-    res.json({ items: questions[name] });
-  } else {
-    res.status(404).send('Quiz was not found');
+  if (!questions[category]) {
+    res.status(404).send();
+    return;
   }
+  
+  const modifiedQuestions = questions[category].map(item => {
+    return {
+      question: item.question,
+      options: item.options,
+    };
+  });
+
+  res.json({
+    categories,
+    questions: modifiedQuestions,
+  });
 });
 
 module.exports = router;

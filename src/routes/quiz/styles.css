@@ -1,0 +1,22 @@
+ /* */* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --color-neutral: #ff0000; /* Adjust as needed */
+  --color-wrong: #0; /* Adjust as needed */
+  --color-correct: #0BDA51; /* Adjust as needed */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #6495ED;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+} */

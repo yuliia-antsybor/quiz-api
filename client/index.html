@@ -11,40 +11,44 @@
 
 <body>
   <div class="Quizzlet">Quizzlet</div>
-  <div class="categories-conteiner hide">
-    <div class="categories">Choose the preferred topic for today</div>
-    <div class="Grammar">
-      <button class="grammar-btn">Grammar</button>
+  <div class="categories hide">
+    <div class="categories__text">Choose the preferred topic</div>
+    <div class="categories__item grammar">
+      <button class="categories__btn grammar-btn">Grammar</button>
     </div>
-    <div class="vocabulary">
-      <button class="vocabulary-btn">Vocabulary</button>
+    <div class="categories__item vocabulary">
+      <button class="categories__btn vocabulary-btn">Vocabulary</button>
     </div>
-    <div class="Vocabulary"></div>
+    <div class="categories__item"></div>
   </div>
-  <div class="conteiner">
-    <div id="question-conteiner" class="hide">
-      <div id="question">Questions</div>
-      <div id="answer-btns" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+
+
+  <div class="container">
+    <div id="question-container" class="container__question hide">
+      <div class="container__question-text">Questions</div>
+      <div id="answer-btns" class="container__btn-grid">
+        <button class="container__btn">Answer 1</button>
+        <button class="container__btn">Answer 2</button>
+        <button class="container__btn">Answer 3</button>
+        <button class="container__btn">Answer 4</button>
       </div>
     </div>
-    <div class="teams-container hide">
-      <div class="team-quantity">
-        <div class="select-teams-text">Select Teams</div>
-        <button class="one-team"> One team</button>
-        <button class="two-teams"> Two teams</button>
-      </div>
-      <div class="name-your-team hide">Name your team: <input type="text" id="teamNameInput"></div>
+  </div>
+
+  <div class="teams hide">
+    <div class="quantity">
+      <div class="quantity__text">Select Teams</div>
+      <button class="quantity__button quantity__button--one">One team</button>
+      <button class="quantity__button quantity__button--two">Two teams</button>
     </div>
+  </div>
 
   </div>
   <div class="controls">
-    <button id="star-tbtn" class="start-btn">Start</button>
-    <button id="next-tbtn" class="start-btn">Next</button>
+    <button id="star-tbtn" class="btn start-btn">Start</button>
+    <button id="next-tbtn" class="btn next-btn">Next</button>
   </div>
+
 
 </body>
 

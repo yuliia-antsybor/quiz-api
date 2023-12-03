@@ -1,4 +1,4 @@
- /* */* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-neutral: #ff0000; /* Adjust as needed */
-  --color-wrong: #0; /* Adjust as needed */
+  --color-neutral: rgb(255, 187, 0); /* Adjust as needed */
+  --color-wrong: #ff0000; /* Adjust as needed, replaced with a valid color */
   --color-correct: #0BDA51; /* Adjust as needed */
 }
 
@@ -19,4 +19,4 @@ body {
   width: 100vw;
   justify-content: center;
   align-items: center;
-} */
+}

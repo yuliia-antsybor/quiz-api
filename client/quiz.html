@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css/quiz.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  !-- questions -->
-<div class="question-container">
-  <div id="question-content" class="question-content__container hide">
+<div class="quiz-container">
+  <div id="quesion-content" class="question-content__container hide">
     <div class="question-content__text">Questions</div>
     <div id="answer-btns" class="question-content__btn-grid">
       <button class="question-content__btn">Answer 1</button>
@@ -22,28 +22,15 @@
 
 <!-- score -->
 
-<div class="intro-container">
-  <div>
-    <div class="intro__counter counter">
-      <p class="counter__prefix">Question:</p>
-      <h1 class="counter__value" id="counter">1/10</h1>
-    </div>
-    
-    <div class="intro__score score">
-      <p class="score__prefix">Score:</p>
-      <h1 class="score__value" id="score">4</h1>
-    </div>
-  </div>
-</div>
 
 
 <!-- START/NEXT question  -->
 </div>
 <div class="controls">
   <button id="star-tbtn" class="btn start-btn">Start</button>
-  <button id="restart-tbtn" class="btn restart-btn">Start</button>
+  <button id="restart-tbtn" class="btn restart-btn">Start again</button>
   <button id="next-tbtn" class="btn next-btn">Next</button>
-  <button id="previous-tbtn" class="btn previous-btn">Next</button>
+  <button id="previous-tbtn" class="btn previous-btn">Previous</button>
 </div>
 
 <!-- restart button -->
@@ -51,6 +38,3 @@
 
 </body>
 </html>
-
-
-<

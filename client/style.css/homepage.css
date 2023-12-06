@@ -1,0 +1,25 @@
+.quizzlet-wrapper {
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+ 
+}
+.intro__score {
+justify-content: center;
+  font-size: 1,2rem;
+  width: 30%;
+  border: 5px solid;
+  color: #777777;
+}
+
+.score {
+  font-size: 1.2rem;
+  width: 30%;
+  border: 5px solid #777777;
+  color: #777777;
+  display: inline-grid;
+  justify-content: center;
+}
+.intro-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+}

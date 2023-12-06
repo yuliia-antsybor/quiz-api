@@ -1,0 +1,52 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    color: var(--default-color);
+    font-family: 'PT Sans';
+    --default-color: #2a2a2a;
+    --color-wrong: #ff0000;
+    --color-correct: #0BDA51;
+    --background-color: #faf0e6;
+}
+
+header {
+    background-color: var(--background-color);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    /* Add padding for space inside the header */
+    /* Center-align text */
+}
+
+.hidden {
+    display: none;
+}
+
+.logo img {
+    max-width: 300px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+.navMenu {
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: 'PT Sans';
+    font-weight: bold;
+}
+
+/* TRAINING BLOCK BELOW */
+
+.demo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+

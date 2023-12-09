@@ -1,28 +1,60 @@
 :root {
-  background-color: rgba(247, 197, 206, 0.301);
+  background-color: rgba(255, 255, 255, 0.301);
 }
 
 .heading-wrapper {
+  position: static;
   display: flex;
   justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ebecec;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.heading-wrapper__text {
+  padding-left: 20px;
+  font-size: 40px;
+  /* Add any other styles for the text */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 200s linear infinite;
+}
+
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
+
+.quizzlet-wrapper {
+  background: #eceded2c;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  height: 300%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.quizzlet-wrapper:hover {
+  text-shadow: 1px 1px 1px hsl(60, 0%, 55%);
+  ;
+  text-decoration: solid;
+
 }
 
 .quizzlet-wrapper__title {
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  color: rgb(218, 89, 198);
-  margin: 10px 0; /* Додайте margin для уникнення зіткнення тексту і фону */
-}
-
-.quizzlet-wrapper {
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(-45deg, rgb(217, 216, 207), #faffb4);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  width: 35%; 
-  height: 60%;
-  margin: auto;
+  color: hsl(48, 100%, 50%);
+  margin: 10px 0;
+  /* Додайте margin для уникнення зіткнення тексту і фону */
 }

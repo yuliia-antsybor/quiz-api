@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --default-color: #2a2a2a;
+  --color-wrong: #ff0000;
+  --color-correct: #0BDA51;
+  --background-color: #eeeeee;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* Corrected from 100vw to 100vh */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+body.correct {
+  --color-correct: #0BDA51;
+}
+
+body.wrong {
+  --color-wrong: #ff0000;
+}
+
+.quiz-container {
+  width: 400px;
+  height: 350px;
+  max-width: 80%;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.question-content__btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px, 0;
+}
+
+.common-btn {
+  background-color: #e518bcd1;
+width: 170px;
+height: 35px;
+  /* Add any other common styles for buttons */
+}

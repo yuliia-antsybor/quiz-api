@@ -1,14 +1,32 @@
-<div class="quiz-container">
-  <div id="quesion-content" class="question-content__container hide">
-    <div class="question-content__text">Questions</div>
-    <div id="answer-btns" class="question-content__btn-grid">
-      <button class="question-content__btn">Answer 1</button>
-      <button class="question-content__btn">Answer 2</button>
-      <button class="question-content__btn">Answer 3</button>
-      <button class="question-content__btn">Answer 4</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/client/styles/quiz.css" rel="stylesheet">
+  <title>Quiz Page</title>
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="question-content" class="question-content__container hide">
+      <div id="question-content__text">Questions</div>
+      <div id="control-btns" class="question-content__btn-grid">
+        <button class="question-content__btn common-btn">Answer 1</button>
+        <button class="question-content__btn common-btn">Answer 2</button>
+        <button class="question-content__btn common-btn">Answer 3</button>
+        <button class="question-content__btn common-btn">Answer 4</button>
+
+        <div class="controls">
+          <button id="star-btn" class="controls__btn controls__btn--start common-btn">Start</button>
+          <button id="next-btn" class="controls__btn controls__btn--next common-btn">Next</button>
+          <!-- <button id="previous-btn" class="controls__btn controls__btn--previous common-btn">Previous</button> -->
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  
+    </div>
+  </div>
 
 
 <!-- score -->
@@ -16,10 +34,4 @@
 
 
 <!-- START/NEXT question  -->
-</div>
-<div class="controls">
-  <button id="star-tbtn" class="btn start-btn">Start</button>
-  <button id="restart-tbtn" class="btn restart-btn">Start again</button>
-  <button id="next-tbtn" class="btn next-btn">Next</button>
-  <button id="previous-tbtn" class="btn previous-btn">Previous</button>
-</div>
+

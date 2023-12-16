@@ -35,54 +35,63 @@ body.wrong {
 }
 
 .quiz-container {
-  width: 400px;
-  height: 350px;
+  width: 500px;
+  height: 450px;
   max-width: 80%;
   background-color: white;
   border: 1px solid hsl(198, 39%, 29%);
   border-radius: 5%;
-  padding: 5px 10px;
   box-shadow: 0 0 10px 2px;
 }
 
 .question-content__btn-grid {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns:auto;
   gap: 10px;
-  padding-top: 30px;
-  margin: 20px, 0;
+  padding-top: 80px;
 }
 
 .common-btn {
-  background: #5E5DF0;
-  border-radius: 20px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
+  background: rgba(94, 93, 240, 0.5);
+  border-radius: 15px;
+  box-shadow: rgba(94, 93, 240, 0.5) 0 10px 20px -10px;
   color: #FFFFFF;
   cursor: pointer;
   font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 30px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
   word-break: break-word;
   border: 0;
-  /* Add any other common styles for buttons */
+
+}
+.common-btn:hover {
+  background: rgba(94, 93, 240, 0.8); 
 }
 
+.common-btn:active {
+  background: rgba(94, 93, 240, 1); 
+}
 .question-content__text {
   padding-bottom: 20px;
   text-align: center;
-  
+  font-style: var(--default-color);
   font-family: inherit;
+  padding-top: 20px;
+  border-radius: 5%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e3131;
 }
 
 .controls {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 90px;
+  padding: 30px;
+
 
 }

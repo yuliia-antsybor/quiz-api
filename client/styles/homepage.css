@@ -5,7 +5,7 @@ background: linear-gradient(90deg, rgba(208,126,247,0.8057816876750701) 0%, rgba
 
 .heading-wrapper {
   position: static;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   top: 0;
   left: 0;
@@ -16,7 +16,8 @@ background: linear-gradient(90deg, rgba(208,126,247,0.8057816876750701) 0%, rgba
 }
 
 .heading-wrapper__logo {
-
+display: flex;
+justify-content: left;
 }
 
 /* @keyframes rainbow-animation {
@@ -37,10 +38,9 @@ background: linear-gradient(90deg, rgba(208,126,247,0.8057816876750701) 0%, rgba
 
 }
 .quizzlet-wrapper__title {
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
-  align-items: center; 
   color: hsl(0, 0%, 2%);
   margin: 10px 0;
   padding: 10px; 
@@ -51,3 +51,4 @@ background: linear-gradient(90deg, rgba(208,126,247,0.8057816876750701) 0%, rgba
 .quizzlet-wrapper__title:hover {
  color: hsl(46, 100%, 50%);
   transform: scale(1, 0.95); }
+

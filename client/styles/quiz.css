@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+
 *,
 *::before,
 *::after {
@@ -23,7 +24,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: var(--background-color)
+  background: rgb(208, 126, 247);
+  background: linear-gradient(90deg, rgba(208, 126, 247, 0.8057816876750701) 0%, rgba(202, 101, 254, 0.8057816876750701) 27%, rgba(106, 90, 224, 1) 100%);
 }
 
 body.correct {
@@ -47,7 +49,7 @@ body.wrong {
 .question-content__btn-grid {
   padding: 80px 10px 10px 15px;
   display: grid;
-  grid-template-columns:auto;
+  grid-template-columns: auto;
   gap: 10px;
 
 }
@@ -69,13 +71,15 @@ body.wrong {
   border: 0;
 
 }
+
 .common-btn:hover {
-  background: rgba(94, 93, 240, 0.8); 
+  background: rgba(94, 93, 240, 0.8);
 }
 
 .common-btn:active {
-  background: rgba(94, 93, 240, 1); 
+  background: rgba(94, 93, 240, 1);
 }
+
 .question-content__text {
   padding-bottom: 10px;
   text-align: center;

@@ -1,51 +1,13 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --default-color: #2a2a2a;
-  --color-wrong: #ff0000;
-  --color-correct: #0BDA51;
-  --background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-}
-
-
-body {
-  font-family: Merriweather, serif;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: rgb(208, 126, 247);
-  background: linear-gradient(90deg, rgba(208, 126, 247, 0.8057816876750701) 0%, rgba(202, 101, 254, 0.8057816876750701) 27%, rgba(106, 90, 224, 1) 100%);
-}
-
-body.correct {
-  --color-correct: #0BDA51;
-}
-
-body.wrong {
-  --color-wrong: #ff0000;
-}
 
 .quiz-container {
-  width: 470px;
-  max-width: 80%;
+  width: 450px;
   background-color: white;
   border-radius: 3%;
   box-shadow: 0 0 5px 1px;
 }
 
 .question-content__btn-grid {
-  padding: 80px 10px 10px 15px;
+  padding: 50px 10px 5px 15px;
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
@@ -53,10 +15,11 @@ body.wrong {
 }
 
 .common-btn {
-  background: rgba(94, 93, 240, 0.5);
-  border-radius: 15px;
-  box-shadow: rgba(94, 93, 240, 0.5) 0 10px 20px -10px;
-  color: #FFFFFF;
+   background: #fff;   /*змінити на білий колір */
+   color: #222;
+  border-radius: 5px;
+  border: 0.5px solid #222;
+  box-shadow: rgba(99, 99, 100, 0.5) 0 5px 5px -5px;
   cursor: pointer;
   font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
   font-size: 18px;
@@ -66,8 +29,7 @@ body.wrong {
   outline: 0 solid transparent;
   padding: 7px 15px;
   word-break: break-word;
-  border: 0;
-
+ 
 }
 
 .common-btn:hover {
@@ -79,7 +41,7 @@ body.wrong {
 }
 
 .question-content__text {
-  padding: 10px 0; 
+  padding: 20px 0; 
   text-align: center;
   font-style: var(--default-color);
   font-family: inherit;
@@ -89,11 +51,10 @@ body.wrong {
   color: #3e3131;
 }
 
-.controls {
+.controls-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
-
+  padding: 15px;
 
 }

@@ -1,16 +1,3 @@
-:root {
-  font-family: Merriweather, serif;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: rgb(208, 126, 247);
-  background: linear-gradient(90deg, rgba(208, 126, 247, 0.8057816876750701) 0%, rgba(202, 101, 254, 0.8057816876750701) 27%, rgba(108, 31, 245, 0.7217480742296919) 99%);
-}
-
 
 .categories-container__wrapper {
   text-align: center;

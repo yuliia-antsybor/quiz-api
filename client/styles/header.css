@@ -1,0 +1,23 @@
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0 10px;
+  position: sticky;
+}
+
+.header-container__navbar {
+  text-align: right;
+}
+
+.header-container__navbar-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Adjust as needed */
+}
+
+.header-container__logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}

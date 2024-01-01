@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+
 * {
     border: 0;
     margin: 0;
@@ -14,39 +16,23 @@
     --background-color: #faf0e6;
 }
 
-header {
-    background-color: var(--background-color);
-    padding: 5px;
+body {
     display: flex;
-    justify-content: space-between;
-    /* Add padding for space inside the header */
-    /* Center-align text */
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Merriweather, serif;
+    background: rgb(208, 126, 247);
+    background: linear-gradient(90deg, rgba(208, 126, 247, 0.8057816876750701) 0%, rgba(202, 101, 254, 0.8057816876750701) 27%, rgba(108, 31, 245, 0.7217480742296919) 99%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .hidden {
     display: none;
 }
-
-.logo img {
-    max-width: 300px;
-    margin-left: 500px;
-    margin-top: 10px;
-}
-
-.navMenu {
-    color: #333;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 50px;
-    font-family: 'PT Sans';
-    font-weight: bold;
-}
-
-/* TRAINING BLOCK BELOW */
-
-.demo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-

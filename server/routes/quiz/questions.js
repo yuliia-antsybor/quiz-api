@@ -1,6 +1,6 @@
 
 module.exports = {
-  'Passive voice': [
+  1: [
     {
       question: "What is the passive voice?",
       options: ['The subject performs the action.', 'The subject receives the action.', 'The subject and the object switch places.'],
@@ -47,7 +47,7 @@ module.exports = {
       correct_answer: 1, // Index of 'be sung'
     }
   ],
-  'Gerund': [
+  2: [
     {
       question: "What is a gerund?",
       options: ['Noun', 'Verb', 'Adjective'],
@@ -100,7 +100,7 @@ module.exports = {
     }
 
   ],
-  'Phrasal verbs': [
+  3: [
     {
       question: "What does the phrasal verb 'break up' mean when someone says, 'They decided to break up'?",
       options: ['a) Start a new project', 'b) End a romantic relationship', 'c) Begin a vacation', 'd) Mend a broken item'],
@@ -150,11 +150,5 @@ module.exports = {
 
   ]
 };
-
-
-
-
-// /quiz/:id
-// /quiz/nature
 
 

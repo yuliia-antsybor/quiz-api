@@ -8,15 +8,15 @@ router.get('/quiz/category', (req, res) => {
   res.json(categories);
 });
 
-router.get('/quiz/:category/questions', (req, res) => {
-  const { category } = req.params;
+router.get('/quiz/:id/questions', (req, res) => {
+  const { id } = req.params;
 
-  if (!questions[category]) {
+  if (!questions[id]) {
     res.status(404).send();
     return;
   }
   
-  const modifiedQuestions = questions[category].map(item => {
+  const modifiedQuestions = questions[id].map(item => {
     return {
       question: item.question,
       options: item.options,
@@ -24,7 +24,7 @@ router.get('/quiz/:category/questions', (req, res) => {
   });
 
   res.json({
-    categories,
+    category: categories[id],
     questions: modifiedQuestions,
   });
 });

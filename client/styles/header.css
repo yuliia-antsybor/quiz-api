@@ -11,6 +11,7 @@
 }
 
 .header-container__navbar-menu {
+  padding: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px; /* Adjust as needed */
@@ -20,4 +21,21 @@
   width: 150px;
   height: auto;
   display: block;
+}
+.header-container__navbar-item {
+text-decoration: none;
+color: var(--default-color);
+font-weight: 600;
+}
+
+.header-container__navbar-item:hover {
+  text-decoration: underline;
+}
+@media(max-width: 320px){
+  .header-container__navbar-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
 }

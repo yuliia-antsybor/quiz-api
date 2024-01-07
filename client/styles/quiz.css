@@ -1,4 +1,3 @@
-
 .quiz-container {
   width: 450px;
   background-color: white;
@@ -15,8 +14,9 @@
 }
 
 .common-btn {
-   background: #fff;   /*змінити на білий колір */
-   color: #222;
+  background: #fff;
+  /*змінити на білий колір */
+  color: #222;
   border-radius: 5px;
   border: 0.5px solid #222;
   box-shadow: rgba(99, 99, 100, 0.5) 0 5px 5px -5px;
@@ -29,7 +29,7 @@
   outline: 0 solid transparent;
   padding: 7px 15px;
   word-break: break-word;
- 
+
 }
 
 .common-btn:hover {
@@ -41,7 +41,7 @@
 }
 
 .question-content__text {
-  padding: 20px 0; 
+  padding: 20px 0;
   text-align: center;
   font-style: var(--default-color);
   font-family: inherit;
@@ -57,4 +57,14 @@
   justify-content: space-evenly;
   padding: 15px;
 
+}
+
+
+@media (max-width: 520px) {
+  .quiz-container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+
+  }
 }

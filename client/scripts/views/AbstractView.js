@@ -1,14 +1,16 @@
 export default class {
-  constructor {
+  title = '';
 
-}
+  constructor() {
+    this.setTitle(this.title)
+  }
 
-setTitle(Title) {
-  document.title = title;
-}
+  setTitle(title) {
+    document.title = title;
+  }
 
-async getHtml() {
-  return "";
-}
+  async getHtml() {
+    return "";
+  }
 
 }

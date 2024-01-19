@@ -1,12 +1,13 @@
 import AbstractView from "./AbstractView";
 
 export default class extends AbstractView {
-  constructor {
-  this.setTitle("Category");
-}
+  constructor() {
+    super();
+    this.setTitle("Category");
+  }
 
-async function getHtml() {
-  return `
+  async getHtml() {
+    return `
     <div class="categories-container__wrapper">
       <h2 class="categories-container__text">Choose the preferred topic</h2>
       <div class="categories-container">
@@ -19,4 +20,5 @@ async function getHtml() {
       </div>
     </div>
   `;
+  }
 }

@@ -2,7 +2,7 @@ export default class {
   title = '';
 
   constructor() {
-    this.setTitle(this.title)
+    this.setTitle(this.title);
   }
 
   setTitle(title) {

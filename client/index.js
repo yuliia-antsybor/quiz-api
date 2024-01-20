@@ -24,7 +24,7 @@ const router = async () => {
   //posts/:id
   const routes = [
     { path: "/", view: Category },
-    { path: "/contacts/:id/:dcode", view: Contacts },
+    { path: "/contacts/:id/:", view: Contacts },
   ];
 
   //test matches for potential routes

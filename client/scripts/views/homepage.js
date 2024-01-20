@@ -1,7 +1,11 @@
 import AbstractView from "./AbstractView";
 
 export default class extends AbstractView {
-  title = 'Homepage';
+  constructor(params) {
+    super(params);
+    this.setTitle("Homepage");
+  }
+
 
   async getHtml() {
     return `

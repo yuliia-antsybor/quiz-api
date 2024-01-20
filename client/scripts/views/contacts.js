@@ -2,7 +2,11 @@ import AbstractView from "./AbstractView";
 import { getCategoryQuestions } from '../api';
 
 export default class extends AbstractView {
-  title = 'Contacts';
+  constructor(params) {
+    super(params);
+    this.setTitle("Contacts");
+  }
+
 
   async getHtml() {
     // console.log(this.params);

@@ -1,5 +1,8 @@
+import category from "./scripts/views/category";
 import Category from "./scripts/views/category";
+import contacts from "./scripts/views/contacts";
 import Contacts from "./scripts/views/contacts";
+import homepage from "./scripts/views/homepage";
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -20,13 +23,13 @@ const navigateTo = url => {
 }
 
 const router = async () => {
-  // console.log(pathToRegex("/contacts/:id"));
-  //posts/:id
   const routes = [
-    { path: "/", view: Category },
-    { path: "/contacts/:id/:", view: Contacts },
-    
+    { path: "/", view: homepage },
+    { path: "/categories", view: category },
+    { path: "/contacts", view: contacts }, // Assuming :id is a parameter
   ];
+
+  // Rest of your routing logic
 
   //test matches for potential routes
   const potentialMatches = routes.map(route => {

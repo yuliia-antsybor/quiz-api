@@ -9,3 +9,5 @@ export function getCategories() {
 export function getCategoryQuestions(id) {
   return axios.get(`${API_BASE_URL}/quiz/${id}/questions`);
 }
+
+

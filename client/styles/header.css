@@ -1,12 +1,13 @@
 .header-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  align-items: center;
-  padding: 0 10px;
-  position: sticky;
-  top: 0;
   background-color: inherit;
   z-index: 1000;
+  grid-template-columns: 1fr 1fr auto;
+  /* Adjusted column order */
+  align-items: center;
+  padding: 0 10px;
+  display: grid;
+  position: sticky;
+  top: 0;
 }
 
 .header-container__logo {
@@ -16,24 +17,29 @@
 }
 
 .header-container__navbar {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  /* Align items to the left corner */
+  align-items: center;
+  width: 100%;
 }
 
 .header-container__navbar-menu {
   display: flex;
-  gap: 80px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
+
 .centered-item {
   text-align: center;
-  margin-right: 20px;
+  margin-left: 60px;
 }
 
 .centered-item:last-child {
   margin-left: auto;
+  /* Pushes "Categories" to the right */
 }
 
 .right-aligned {

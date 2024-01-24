@@ -8,7 +8,7 @@ export default class extends AbstractView {
 
 
   async getHtml() {
-    // console.log(this.params);
+    console.log(this.params);
 
     return `<h1>Welcome to quiz! It still works!</h1>`;
   }

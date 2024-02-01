@@ -1,15 +1,14 @@
-import AbstractView from "./AbstractView";
+import AbstractView from './AbstractView'
 
 export default class extends AbstractView {
   constructor(params) {
-    super(params);
-    this.setTitle("Homepage");
+    super(params)
+    this.setTitle('Homepage')
   }
 
-
   async getHtml() {
-    console.log(this.params);
+    console.log(this.params)
 
-    return `<h1>Welcome to quiz! It still works!</h1>`;
+    return `<h1>Welcome to quiz! It still works!</h1>`
   }
 }

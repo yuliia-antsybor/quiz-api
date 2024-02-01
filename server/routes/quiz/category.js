@@ -10,5 +10,5 @@ module.exports = [
   {
     id: 3,
     name: 'Phrasal verbs',
-  }
+  },
 ]

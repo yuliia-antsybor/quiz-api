@@ -14,7 +14,7 @@ const getParams = match => {
   const keys = Array.from(match.route.path.matchAll(/:(\w+)/g)).map(result => result[1]);
 
   // Return an object with keys and values
-  return Object.
+  return Object.fromEntries(keys.map((key, i) => [key, values[i]]));
 }
 
 const navigateTo = url => {

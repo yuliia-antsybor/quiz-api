@@ -14,7 +14,7 @@ const getParams = match => {
   const keys = Array.from(match.route.path.matchAll(/:(\w+)/g)).map(result => result[1]);
 
   // Return an object with keys and values
-  return Object.fromEntries(keys.map((key, i) => [key, values[i]]));
+  return Object.
 }
 
 const navigateTo = url => {
@@ -57,7 +57,7 @@ const router = async () => {
 // Make navigation through history forward back
 window.addEventListener("popstate", router);
 
-//prevent defoult page reloading 
+//prevent defoult page reloading
 document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", e => {
     if (e.target.matches("[data-link]")) {

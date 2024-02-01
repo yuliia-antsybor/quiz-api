@@ -1,9 +1,9 @@
-import AbstractView from "./AbstractView";
+import AbstractView from './AbstractView'
 
 export default class extends AbstractView {
   constructor(params) {
-    super(params);
-    this.setTitle("Category");
+    super(params)
+    this.setTitle('Category')
   }
 
   async getHtml() {
@@ -19,6 +19,6 @@ export default class extends AbstractView {
         </div>
       </div>
     </div>
-  `;
+  `
   }
 }

@@ -1,8 +1,8 @@
 import category from "./scripts/views/category";
-import Category from "./scripts/views/category";
 import contacts from "./scripts/views/contacts";
-import Contacts from "./scripts/views/contacts";
 import homepage from "./scripts/views/homepage";
+import quiz from "./scripts/views/quiz";
+
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -27,6 +27,7 @@ const router = async () => {
     { path: "/", view: homepage },
     { path: "/categories", view: category },
     { path: "/contacts", view: contacts }, // Assuming :id is a parameter
+    { path: "/quiz/:id", view: quiz },
   ];
 
   // Rest of your routing logic
@@ -52,6 +53,7 @@ const router = async () => {
   const view = new match.route.view(getParams(match));
 
   document.querySelector("#app").innerHTML = await view.getHtml();
+  view.onMounted();
 };
 
 // Make navigation through history forward back
@@ -68,13 +70,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   router();
 });
-
-//test routes for potential matches
-
-
-// function init() {
-//   // get categories
-//   // render HTML with categories
-// }
-
-// init();

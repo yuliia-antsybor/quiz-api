@@ -2,11 +2,12 @@
   "name": "quiz-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "./client/index.html",
   "scripts": {
     "start": "node ./server/app.js",
     "dev": "nodemon ./server/app.js",
-    "start:client": "parcel ./client/index.html --open"
+    "start:client": "parcel --open",
+    "build:client": "parcel build"
   },
   "keywords": [],
   "author": "",

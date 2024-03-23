@@ -59,7 +59,7 @@ const router = async () => {
 // Make navigation through history forward back
 window.addEventListener("popstate", router);
 
-//prevent defoult page reloading 
+//prevent defoult page reloading
 document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", e => {
     if (e.target.matches("[data-link]")) {
@@ -70,3 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   router();
 });
+
+//test routes for potential matches
+
+
+// function init() {
+//   // get categories
+//   // render HTML with categories
+// }
+
+// init();
